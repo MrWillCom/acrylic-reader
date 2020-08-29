@@ -15,19 +15,9 @@ Acrylic Reader's upstream is [yang991178/fluent-reader](https://github.com/yang9
 - I improve and fix small problems to this app.
 - You can [sponsor me](https://patreon.com/MrWillCom) for my improvement to this app, but if you like this app's core features, you should go to [yang991178/fluent-reader](https://github.com/yang991178/fluent-reader) and sponsor [the original author](https://github.com/yang991178).
 
-## Improved
-
-- Change the menu's animation from CSS `clip-path` to CSS `width`.
-  - Article from my blog about why changing this: [Closed. Closed Again.](https://mrwillcom.now.sh/2020/08/29/Closed-Closed-Again/)
-  - Pull requests to the upstream:
-      - [yang991178/fluent-reader #88](https://github.com/yang991178/fluent-reader/pull/88)
-      - [yang991178/fluent-reader #86](https://github.com/yang991178/fluent-reader/pull/86)
-- Add acrylic background for the menu.
-  - Pull request to the upstream: [yang991178/fluent-reader #72](https://github.com/yang991178/fluent-reader/pull/72).
-
 <hr />
 
-**The original README**
+# The original README
 
 ## Download
 
