@@ -115,6 +115,8 @@
         "version": "Version",
         "shortcuts": "Shortcuts",
         "openSource": "Open source",
+        "upstream": "Upstream",
+        "thisAppIsFullyBasedOn": "This app is fully based on",
         "feedback": "Feedback"
     },
     "sources": {

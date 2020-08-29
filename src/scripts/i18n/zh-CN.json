@@ -113,6 +113,8 @@
         "version": "版本",
         "shortcuts": "快捷键",
         "openSource": "开源项目",
+        "thisAppIsFullyBasedOn": "此应用完全基于",
+        "upstream": "上游项目",
         "feedback": "反馈"
     },
     "sources": {
