@@ -8,6 +8,7 @@ import { shareSubmenu } from "./context-menu"
 import { platformCtrl, decodeFetchResponse } from "../scripts/utils"
 
 const FONT_SIZE_OPTIONS = [12, 13, 14, 15, 16, 17, 18, 19, 20]
+const FONT_FACE_OPTIONS = ['Default', 'Serif', 'Sans']
 
 type ArticleProps = {
     item: RSSItem
@@ -26,6 +27,8 @@ type ArticleProps = {
 
 type ArticleState = {
     fontSize: number
+    fontFace: string
+    fontFamily: string
     loadWebpage: boolean
     loadFull: boolean
     fullContent: string
@@ -41,6 +44,8 @@ class Article extends React.Component<ArticleProps, ArticleState> {
         super(props)
         this.state = {
             fontSize: this.getFontSize(),
+            fontFace: this.getFontFace(),
+            fontFamily: this.parseFontFace(this.getFontFace()),
             loadWebpage: props.source.openTarget === SourceOpenTarget.Webpage,
             loadFull: props.source.openTarget === SourceOpenTarget.FullContent,
             fullContent: "",
@@ -62,13 +67,49 @@ class Article extends React.Component<ArticleProps, ArticleState> {
         this.setState({fontSize: size})
     }
 
-    fontMenuProps = (): IContextualMenuProps => ({
+    getFontFace = () => {
+        return window.settings.getFontFace()
+    }
+    setFontFace = (font: string) => {
+        window.settings.setFontFace(font)
+        this.setState({
+            fontFace: font,
+            fontFamily: this.parseFontFace(font)
+        })
+    }
+    parseFontFace = (face: string) => {
+        switch (face) {
+            case 'Default':
+                return '';
+        
+            case 'Serif':
+                return 'Source Han Serif';
+        
+            case 'Sans':
+                return 'Source Han Sans';
+            
+            default:
+                return '';
+        }
+    }
+
+    fontSizeMenuProps = (): IContextualMenuProps => ({
         items: FONT_SIZE_OPTIONS.map(size => ({
             key: String(size),
             text: String(size),
             canCheck: true,
             checked: size === this.state.fontSize,
             onClick: () => this.setFontSize(size)
+        }))
+    })
+
+    fontFaceMenuProps = (): IContextualMenuProps => ({
+        items: FONT_FACE_OPTIONS.map(face => ({
+            key: face,
+            text: face,
+            canCheck: true,
+            checked: face === this.state.fontFace,
+            onClick: () => this.setFontFace(face)
         }))
     })
 
@@ -93,11 +134,18 @@ class Article extends React.Component<ArticleProps, ArticleState> {
                 onClick: () => { this.props.toggleHidden(this.props.item) }
             },
             {
-                key: "fontMenu",
+                key: "fontSizeMenu",
                 text: intl.get("article.fontSize"),
                 iconProps: { iconName: "FontSize" },
                 disabled: this.state.loadWebpage,
-                subMenuProps: this.fontMenuProps()
+                subMenuProps: this.fontSizeMenuProps()
+            },
+            {
+                key: "fontFaceMenu",
+                text: intl.get("article.fontFace"),
+                iconProps: { iconName: "Font" },
+                disabled: this.state.loadWebpage,
+                subMenuProps: this.fontFaceMenuProps()
             },
             {
                 key: "divider_1",
@@ -225,11 +273,11 @@ class Article extends React.Component<ArticleProps, ArticleState> {
 
     articleView = () => {
         const a = encodeURIComponent(this.state.loadFull ? this.state.fullContent : this.props.item.content)
-        const h = encodeURIComponent(renderToString(<>
+        const h = encodeURIComponent(renderToString(<div style={{fontFamily: this.state.fontFamily}}>
             <p className="title">{this.props.item.title}</p>
             <p className="date">{this.props.item.date.toLocaleString(this.props.locale, {hour12: !this.props.locale.startsWith("zh")})}</p>
             <article></article>
-        </>))
+        </div>))
         return `article/article.html?a=${a}&h=${h}&s=${this.state.fontSize}&u=${this.props.item.link}&m=${this.state.loadFull?1:0}`
     }
 

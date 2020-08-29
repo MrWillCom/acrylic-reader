@@ -114,6 +114,14 @@ ipcMain.handle("set-font-size", (_, size: number) => {
     store.set(FONT_SIZE_STORE_KEY, size)
 })
 
+const FONT_FACE_STORE_KEY = "fontFace"
+ipcMain.on("get-font-face", (event) => {
+    event.returnValue = store.get(FONT_FACE_STORE_KEY, 'Default')
+})
+ipcMain.handle("set-font-face", (_, font: string) => {
+    store.set(FONT_FACE_STORE_KEY, font)
+})
+
 ipcMain.on("get-all-settings", (event) => {
     let output = {}
     for (let [key, value] of store) {

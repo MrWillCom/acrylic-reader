@@ -56,13 +56,13 @@ a:hover, a:active {
     animation-fill-mode: both;
 }
 
-#main > p.title {
+#main > div > p.title {
     font-size: 1.25rem;
     line-height: 1.75rem;
     font-weight: 600;
     margin-block-end: 0;
 }
-#main > p.date {
+#main > div > p.date {
     color: var(--gray);
     font-size: .875rem;
 }

@@ -63,6 +63,7 @@
         "star": "标为星标",
         "unstar": "取消星标",
         "fontSize": "字体大小",
+        "fontFace": "字体",
         "loadWebpage": "加载网页",
         "loadFull": "抓取全文",
         "notify": "后台抓取时发送通知",

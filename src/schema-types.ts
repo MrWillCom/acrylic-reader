@@ -70,6 +70,7 @@ export type SchemaTypes = {
     locale: string
     sourceGroups: SourceGroup[]
     fontSize: number
+    fontFace: string
     menuOn: boolean
     fetchInterval: number
     searchEngine: SearchEngines
