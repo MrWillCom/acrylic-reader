@@ -1,14 +1,33 @@
 <p align="center">
   <img width="120" height="120" src="https://github.com/yang991178/rss-reader/raw/master/build/icon.png">
 </p>
-<h3 align="center">Fluent Reader</h3>
-<p align="center">A modern desktop RSS reader</p>
-<p align="center">
-  <img src="https://img.shields.io/github/v/release/yang991178/fluent-reader?label=version" />
-  <img src="https://img.shields.io/github/downloads/yang991178/fluent-reader/total" />
-  <img src="https://github.com/yang991178/fluent-reader/workflows/CI%2FCD%20Release/badge.svg" />
-</p>
+<h3 align="center">Acrylic Reader</h3>
+<p align="center">Better Fluent Reader.</p>
+
+Acrylic Reader keeps up to date with [yang991178/fluent-reader](https://github.com/yang991178/fluent-reader) and will add and improve some features.
+
+## License
+
+Acrylic Reader's upstream is [yang991178/fluent-reader](https://github.com/yang991178/fluent-reader). It's fully based on [yang991178/fluent-reader](https://github.com/yang991178/fluent-reader). The license of [the upstream]((https://github.com/yang991178/fluent-reader)) is [BSD 3-Clause License](./LICENSEOFUPSTREAM), the improved copy is licensed under [MIT License](./LICENSE).
+
+## Notice
+
+- I improve and fix small problems to this app.
+- You can [sponsor me](https://patreon.com/MrWillCom) for my improvement to this app, but if you like this app's core features, you should go to [yang991178/fluent-reader](https://github.com/yang991178/fluent-reader) and sponsor [the original author](https://github.com/yang991178).
+
+## Improved
+
+- Change the menu's animation from CSS `clip-path` to CSS `width`.
+  - Article from my blog about why changing this: [Closed. Closed Again.](https://mrwillcom.now.sh/2020/08/29/Closed-Closed-Again/)
+  - Pull requests to the upstream:
+      - [yang991178/fluent-reader #88](https://github.com/yang991178/fluent-reader/pull/88)
+      - [yang991178/fluent-reader #86](https://github.com/yang991178/fluent-reader/pull/86)
+- Add acrylic background for the menu.
+  - Pull request to the upstream: [yang991178/fluent-reader #72](https://github.com/yang991178/fluent-reader/pull/72).
+
 <hr />
+
+**The original README**
 
 ## Download
 
