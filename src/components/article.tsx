@@ -8,7 +8,8 @@ import { shareSubmenu } from "./context-menu"
 import { platformCtrl, decodeFetchResponse } from "../scripts/utils"
 
 const FONT_SIZE_OPTIONS = [12, 13, 14, 15, 16, 17, 18, 19, 20]
-const FONT_FACE_OPTIONS = ['Default', 'Serif', 'Sans']
+const FONT_FACE_OPTIONS = ['default', 'serif', 'sans', 'mono']
+const PARSED_FONT_FACE = ['', 'Source Han Serif', 'Source Han Sans', 'Monaco, Consolas, monospace']
 
 type ArticleProps = {
     item: RSSItem
@@ -78,18 +79,10 @@ class Article extends React.Component<ArticleProps, ArticleState> {
         })
     }
     parseFontFace = (face: string) => {
-        switch (face) {
-            case 'Default':
-                return '';
-        
-            case 'Serif':
-                return 'Source Han Serif';
-        
-            case 'Sans':
-                return 'Source Han Sans';
-            
-            default:
-                return '';
+        for (const i in FONT_FACE_OPTIONS) {
+            if (FONT_FACE_OPTIONS[i] == face) {
+                return PARSED_FONT_FACE[i]
+            }
         }
     }
 
@@ -106,7 +99,7 @@ class Article extends React.Component<ArticleProps, ArticleState> {
     fontFaceMenuProps = (): IContextualMenuProps => ({
         items: FONT_FACE_OPTIONS.map(face => ({
             key: face,
-            text: face,
+            text: intl.get(`fonts.${face}`),
             canCheck: true,
             checked: face === this.state.fontFace,
             onClick: () => this.setFontFace(face)

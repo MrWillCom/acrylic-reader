@@ -185,6 +185,17 @@ img.favicon.dropdown {
     margin: 0 !important;
     -webkit-user-drag: none;
 }
+.settings-about-license-heading {
+    color: var(--black);
+}
+.settings-about-license-content {
+    color: var(--black);
+    font-family: Monaco, Consolas, monospace;
+    font-size: 12px;
+    background-color: var(--neutralLighterAlt);
+    padding: 6px;
+    border-radius: 4px;
+}
 .settings-rules-icons i {
     color: var(--black);
     user-select: none;

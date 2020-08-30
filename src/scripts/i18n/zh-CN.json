@@ -115,6 +115,7 @@
         "openSource": "开源项目",
         "thisAppIsFullyBasedOn": "此应用完全基于",
         "upstream": "上游项目",
+        "licenseOfUpstream": "上游项目的开源许可",
         "feedback": "反馈"
     },
     "sources": {
@@ -227,5 +228,11 @@
         "pacHint": "对于Socks代理建议PAC返回“SOCKS5”以启用代理端解析。关闭代理需重启应用后生效。",
         "fetchInterval": "自动抓取频率",
         "never": "从不"
+    },
+    "fonts": {
+        "default": "默认",
+        "serif": "衬线",
+        "sans": "无衬线",
+        "mono": "等宽"
     }
 }
