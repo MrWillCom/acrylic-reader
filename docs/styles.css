@@ -126,6 +126,18 @@ a:active {
     background-color: var(--block);
 }
 
+.notice-container {
+    border-top: 1px solid var(--block);
+    border-bottom: 1px solid var(--block);
+}
+
+.notice-container .inner {
+    text-align: center;
+    max-width: 1000px;
+    margin: auto;
+    padding: 64px;
+}
+
 .features-container {
     max-width: 1000px;
     margin: auto;
@@ -149,6 +161,19 @@ a:active {
     padding: 16px;
 }
 
+.features-container section .date {
+    font-size: 12px;
+    margin: 0;
+    font-weight: bold;
+    color: #888;
+}
+
+.features-container section h2 {
+    font-size: 24px;
+    margin: 4px 0;
+    font-weight: bold;
+}
+
 .features-container section img, .features-container section video {
     width: 100%;
 }
@@ -164,6 +189,6 @@ a:active {
     padding: 64px;
 }
 
-.footer-container .footer-item{
+.footer-container .footer-item {
     margin: 16px;
 }
