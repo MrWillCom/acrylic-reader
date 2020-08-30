@@ -1,87 +1,77 @@
 <html>
-    <head>
-        <title>Fluent Reader</title>
-        <link rel="icon" href="imgs/icon.png">
-        <link rel="stylesheet" href="styles.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    </head>
-    <body>
-        <div class="logo-container">
+
+<head>
+    <title>Acrylic Reader</title>
+    <link rel="icon" href="imgs/icon.png">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+</head>
+
+<body>
+    <div class="logo-container">
+        <div>
             <img src="imgs/logo.svg" />
-            <header>Fluent Reader</header>
+            <h2>Acrylic Reader</h2>
         </div>
-        <div class="light-container">
-            <div class="screenshot elevate"><img src="imgs/light.png" /></div>
-            <h1>Modern desktop RSS reader. Open-source.</h1>
-            <p>
-                Fluent Reader is a local, cross-platform news aggregator with a fresh look.
-                Bring all your favorite sources with you and read distraction-free.
-            </p>
-        </div>
-        <div class="features-container">
-            <section class="elevate">
-                <h2>Open & Organized.</h2>
-                <p>
-                    Stay in sync with Feedbin or your self-hosted RSS service compatible with
-                    Fever, or import your sources from an OPML file and start reading locally. 
-                    Easily organize sources with groups. Move between computers with full
-                    data backups.
-                </p>
-                <img class="elevate" src="imgs/opml.png" />
-            </section>
-            <section class="elevate">
-                <h2>Read fluently.</h2>
-                <p>
-                    Enjoy your contents like never before with the built-in article view 
-                    for RSS full text tailored to maximize focus. Source only comes with 
-                    snippets? Configure to load full content with Mercury Parser, load
-                    webpage in the app, or open externally by default.
-                </p>
-                <img class="elevate" src="imgs/read.png" />
-            </section>
-            <section class="elevate">
-                <h2>Search. Filter.</h2>
-                <p>
-                    Find anything you want with the power of regular expressions. Search in 
-                    both titles and full contents of articles. Mark articles as starred, 
-                    hidden, or unread and filter as they arrive with custom rules based 
-                    on regular expressions.
-                </p>
-                <img class="elevate center" src="imgs/search.png" />
-            </section>
-            <section class="elevate">
-                <h2>Privacy first.</h2>
-                <h3>All your data stays with you.</h3>
-                <h3>All cookies cleared upon exit.</h3>
-                <h3>XSS blocked in an isolated context.</h3>
-                <h3>No personal information collected, ever.</h3>
-                <h3>Behavior tracking limited.</h3>
-                <h3>Strict Content Security Policy enforced.</h3>
-                <h3>Proxy support with PAC.</h3>
-                <br />
-                <h3><span>■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■</span></h3>
-                <h3><span>■ ■ ■ ■ ■ ■</span></h3>
-                <h3><span>■ ■ ■ ■ ■ ■ ■ ■ ■</span></h3>
-                <h3><span>■ ■ ■ ■ ■ ■ ■</span></h3>
-            </section>
-        </div>
-        <div class="dark-container">
-            <div class="screenshot elevate"><img src="imgs/dark.png" /></div>
-            <h1>Oh, it also comes in black.</h1>
-            <p>Full system-level dark mode support for both UI and reading.</p>
-        </div>
-        <div class="get-container">
-            <div class="stores">
-                <a href="https://www.microsoft.com/store/apps/9P71FC94LRH8?cid=website"><img class="ms-get" src="imgs/store.png" /></a>
-                <a href="https://apps.apple.com/app/id1520907427"><img class="mac-get" src="imgs/mac_store.svg" /></a>
+    </div>
+    <div class="intro-container">
+        <h1>Better Fluent Reader.</h1>
+        <p>
+            Acrylic Reader keeps up to date with <a
+                href="https://github.com/yang991178/fluent-reader">yang991178/fluent-reader</a> and will add and improve
+            some features.
+        </p>
+    </div>
+    <div class="features-container">
+        <section>
+            <img src="imgs/change-font-face.png" />
+            <div class="content">
+                <h2>Change Font Face</h2>
+                <p>Change to your favorite font face easily just like changing the font size.</p>
             </div>
-            <div><a href="https://github.com/yang991178/fluent-reader/releases">Download from GitHub Releases</a></div>
-            <div class="links">
-                <a href="https://github.com/yang991178/fluent-reader/">GitHub</a>
-                <a href="https://github.com/sponsors/yang991178">Sponsor</a>
-                <a href="https://github.com/yang991178/fluent-reader/wiki/Privacy">Privacy</a>
-                <a href="https://github.com/yang991178/fluent-reader/wiki/Support">Help</a>
+        </section>
+        <section>
+            <video src="imgs/better-menu-animation.mp4" autoplay loop></video>
+            <div class="content">
+                <h2>Better Menu Animation</h2>
+                <p>This animation changes the width to show/hide the menu, so it won't cut the shadow.</p>
+                <button class="uwp-btn"
+                    onclick="window.open('https://mrwillcom.now.sh/2020/08/29/Closed-Closed-Again/')">
+                    <div class="uwp-border">Why it's Not Available in Fluent Reader</div>
+                    <div class="uwp-reveal-highlight"></div>
+                </button>
+                <button class="uwp-btn" onclick="window.open('https://github.com/yang991178/fluent-reader/pull/88')">
+                    <div class="uwp-border">The 2nd Pull Request to Fluent Reader</div>
+                    <div class="uwp-reveal-highlight"></div>
+                </button>
+                <button class="uwp-btn" onclick="window.open('https://github.com/yang991178/fluent-reader/pull/86')">
+                    <div class="uwp-border">Pull Request to Fluent Reader</div>
+                    <div class="uwp-reveal-highlight"></div>
+                </button>
             </div>
+        </section>
+        <section>
+            <img src="imgs/acrylic-background-for-menu.png" />
+            <div class="content">
+                <h2>Acrylic Background for Menu</h2>
+                <p>The menu have an acrylic background, just like the glass. You can also experience it in Fluent Reader
+                    because I've merged it into Fluent Reader.</p>
+                <button class="uwp-btn" onclick="window.open('https://github.com/yang991178/fluent-reader/pull/72')">
+                    <div class="uwp-border">Pull Request to Fluent Reader</div>
+                    <div class="uwp-reveal-highlight"></div>
+                </button>
+            </div>
+        </section>
+    </div>
+    <div class="footer-container">
+        <div class="inner">
+            <a href="https://github.com/MrWillCom/acrylic-reader" class="footer-item">Open Source</a>
+            <a href="https://github.com/yang991178/fluent-reader" class="footer-item">Upstream</a>
+            <a href="https://github.com/yang991178/fluent-reader" class="footer-item">License of Upstream</a>
+            <p>Please always remember: <a href="https://github.com/MrWillCom/acrylic-reader">Acrylic Reader</a> is fully based on <a href="https://hyliu.me/fluent-reader/">Fluent Reader</a>.</p>
         </div>
-    </body>
+    </div>
+    <script src="script.js"></script>
+</body>
+
 </html>
