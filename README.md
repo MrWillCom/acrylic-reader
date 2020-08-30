@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="120" height="120" src="https://github.com/yang991178/rss-reader/raw/master/build/icon.png">
+  <img width="120" height="120" src="https://github.com/MrWillCom/acrylic-reader/raw/master/build/icon.png">
 </p>
 <h3 align="center">Acrylic Reader</h3>
 <p align="center">Better Fluent Reader.</p>
@@ -8,7 +8,7 @@ Acrylic Reader keeps up to date with [yang991178/fluent-reader](https://github.c
 
 ## License
 
-Acrylic Reader's upstream is [yang991178/fluent-reader](https://github.com/yang991178/fluent-reader). It's fully based on [yang991178/fluent-reader](https://github.com/yang991178/fluent-reader). The license of [the upstream]((https://github.com/yang991178/fluent-reader)) is [BSD 3-Clause License](./LICENSEOFUPSTREAM), the improved copy is licensed under [MIT License](./LICENSE).
+Acrylic Reader's upstream is [yang991178/fluent-reader](https://github.com/yang991178/fluent-reader). It's fully based on [yang991178/fluent-reader](https://github.com/yang991178/fluent-reader). The license of [the upstream]((https://github.com/yang991178/fluent-reader)) is [BSD 3-Clause License](./LICENSEOFUPSTREAM), you can also get the license [here](https://github.com/yang991178/fluent-reader/blob/master/LICENSE). The improved copy is licensed under [MIT License](./LICENSE).
 
 ## Notice
 

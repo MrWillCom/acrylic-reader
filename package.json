@@ -1,6 +1,6 @@
 {
   "name": "acrylic-reader",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Better Fluent Reader.",
   "main": "./dist/electron.js",
   "scripts": {
@@ -18,8 +18,8 @@
   "license": "MIT",
   "build": {
     "appId": "mrwillcom.acrylicreader",
-    "productName": "Fluent Reader",
-    "copyright": "Copyright © 2020 Haoyuan Liu",
+    "productName": "Acrylic Reader",
+    "copyright": "Copyright (c) 2020 Mr. Will",
     "files": [
       "./dist/**/*",
       "!**/*.js.map"
@@ -35,9 +35,6 @@
       ]
     },
     "appx": {
-      "applicationId": "FluentReader",
-      "identityName": "25286HaoyuanLiu.FluentReader",
-      "publisher": "CN=FD70E7FA-E5AC-41C4-B9C4-6E8708A6616A",
       "backgroundColor": "transparent",
       "languages": [
         "zh-CN",
@@ -70,7 +67,7 @@
       ]
     },
     "mas": {
-      "appId": "DevHYLiu.FluentReader",
+      "appId": "mrwillcom.acrylicreader",
       "entitlements": "build/entitlements.mas.plist",
       "entitlementsInherit": "build/entitlements.mas.inherit.plist",
       "provisioningProfile": "build/embedded.provisionprofile",
@@ -82,7 +79,8 @@
       "target": [
         "AppImage"
       ]
-    }
+    },
+    "electronDownload": { "mirror": "https://npm.taobao.org/mirrors/electron/" }
   },
   "devDependencies": {
     "@fluentui/react": "^7.126.2",

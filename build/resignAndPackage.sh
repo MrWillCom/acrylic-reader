@@ -1,7 +1,7 @@
 printf "......................\nresignAndPackage start\n\n"
 
 # Name of your app.
-APP="Fluent Reader"
+APP="Acrylic Reader"
 # Your Certificate name.
 CERT="Jieyu Yan (EM8VE646TZ)"
 # The path of your app to sign.
