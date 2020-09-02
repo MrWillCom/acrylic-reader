@@ -14,9 +14,9 @@
     "package-linux": "electron-builder --linux -p never"
   },
   "keywords": [],
-  "author": "Haoyuan Liu",
-  "license": "BSD-3-Clause",
-  "repository": "github:yang991178/fluent-reader",
+  "author": "Mr. Will",
+  "license": "MIT",
+  "repository": "github:MrWillCom/acrylic-reader",
   "build": {
     "appId": "mrwillcom.acrylicreader",
     "productName": "Acrylic Reader",
