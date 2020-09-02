@@ -45,13 +45,21 @@
     background-color: var(--neutralLighterAltOpacity);
     backdrop-filter: var(--blur);
     box-shadow: 5px 0 25px #0004;
-    transition: clip-path var(--transition-timing) .367s, opacity cubic-bezier(0, 0, 0.2, 1) .367s;
-    clip-path: inset(0 100% 0 0);
-    opacity: 0;
+    transition: width var(--transition-timing) .367s;
 }
 .menu-container.show .menu {
-    clip-path: inset(0 -50px 0 0);
+    width: 280px
+}
+.menu-container .menu-inner {
+    overflow: hidden;
+}
+.close-menu-btn {
+    opacity: 0;
+    pointer-events: none;
+}
+.menu-container.show .close-menu-btn {
     opacity: 1;
+    pointer-events: initial;
 }
 body.blur .menu .btn-group {
     --black: var(--neutralSecondaryAlt);
@@ -65,6 +73,7 @@ body.darwin .menu .btn-group {
     overflow: hidden auto;
 }
 .menu-container .menu p.subs-header {
+    min-width: 280px;
     font-size: 12px;
     color: var(--neutralSecondaryAlt);
     margin: 2px 8px;
@@ -273,6 +282,9 @@ body.darwin .list-main .article-search {
     .menu-container .menu {
         background-color: var(--neutralLight);
         box-shadow: none;
+    }
+    .menu-container.show .menu {
+        clip-path: inset(0);
     }
     body.darwin .menu-container .menu {
         background: none;
