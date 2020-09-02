@@ -79,8 +79,7 @@
       "target": [
         "AppImage"
       ]
-    },
-    "electronDownload": { "mirror": "https://npm.taobao.org/mirrors/electron/" }
+    }
   },
   "devDependencies": {
     "@fluentui/react": "^7.126.2",
