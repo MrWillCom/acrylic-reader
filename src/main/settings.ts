@@ -116,7 +116,7 @@ ipcMain.handle("set-font-size", (_, size: number) => {
 
 const FONT_FACE_STORE_KEY = "fontFace"
 ipcMain.on("get-font-face", (event) => {
-    event.returnValue = store.get(FONT_FACE_STORE_KEY, 'Default')
+    event.returnValue = store.get(FONT_FACE_STORE_KEY, 'default')
 })
 ipcMain.handle("set-font-face", (_, font: string) => {
     store.set(FONT_FACE_STORE_KEY, font)

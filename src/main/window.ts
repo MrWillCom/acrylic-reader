@@ -43,7 +43,7 @@ export class WindowManager {
     createWindow = () => {
         if (!this.hasWindow()) {
             this.mainWindow = new BrowserWindow({
-                title: "Fluent Reader",
+                title: "Acrylic Reader",
                 backgroundColor: process.platform === "darwin" ? "#00000000" : (nativeTheme.shouldUseDarkColors ? "#282828" : "#faf9f8"),
                 vibrancy: "sidebar",
                 x: this.mainWindowState.x,

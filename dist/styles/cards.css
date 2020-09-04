@@ -196,6 +196,7 @@
 .list-card .data {
     flex-grow: 1;
     margin: 8px 10px;
+    margin-left: 12px;
     overflow: hidden;
 }
 .list-card .info {
@@ -227,8 +228,12 @@
     content: "";
     display: block;
     position: absolute;
-    height: 100%;
-    border-left: 2px solid var(--primary);
+    left: 4px;
+    top: 8px;
+    bottom: 8px;
+    width: 2px;
+    background-color: var(--primary);
+    border-radius: 4px;
 }
 .list-card.read, .list-card.read p.snippet {
     color: var(--neutralSecondaryAlt);
